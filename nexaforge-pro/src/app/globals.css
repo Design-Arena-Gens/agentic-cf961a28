@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: 220 27% 8%;
+  --foreground: 210 20% 98%;
+  --card: 222 47% 11%;
+  --card-foreground: 210 20% 98%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 20% 98%;
+  --primary: 199 89% 63%;
+  --primary-foreground: 210 27% 11%;
+  --secondary: 266 85% 73%;
+  --secondary-foreground: 265 92% 15%;
+  --muted: 222 47% 15%;
+  --muted-foreground: 217 80% 78%;
+  --accent: 164 95% 68%;
+  --accent-foreground: 225 14% 14%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 20% 98%;
+  --border: 222 45% 18%;
+  --input: 223 36% 24%;
+  --ring: 200 100% 60%;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: 210 20% 6%;
+  --foreground: 210 20% 98%;
+  --card: 215 28% 12%;
+  --card-foreground: 210 20% 98%;
+  --popover: 215 28% 12%;
+  --popover-foreground: 210 20% 98%;
+  --primary: 199 89% 63%;
+  --primary-foreground: 210 27% 11%;
+  --secondary: 266 82% 78%;
+  --secondary-foreground: 265 92% 15%;
+  --muted: 220 20% 18%;
+  --muted-foreground: 217 80% 78%;
+  --accent: 164 95% 68%;
+  --accent-foreground: 225 14% 14%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 20% 98%;
+  --border: 215 28% 26%;
+  --input: 215 28% 26%;
+  --ring: 200 100% 60%;
+  --radius: 1rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans, system-ui), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(circle at top, rgba(59, 130, 246, 0.16), transparent 55%),
+    radial-gradient(circle at bottom, rgba(236, 72, 153, 0.1), transparent 45%);
+  min-height: 100vh;
+}
